@@ -402,7 +402,7 @@ function App() {
               </div>
               <div className="mt-2 flex flex-col gap-1 sm:flex-row sm:flex-wrap sm:items-end sm:gap-x-4 sm:gap-y-2">
                 <h1 className="text-[1.55rem] font-semibold tracking-tight text-white sm:text-[1.9rem]">LockLift</h1>
-                <p className="text-xs text-slate-400 sm:text-sm">查看占用进程并按需释放，不做默认全杀。</p>
+                <p className="text-xs text-slate-400 sm:text-sm">查看占用进程并按需释放</p>
               </div>
             </div>
 

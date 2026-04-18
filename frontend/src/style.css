@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  font-family: "Segoe UI Variable Text", "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(34, 211, 238, 0.18), transparent 26%),
+    radial-gradient(circle at top right, rgba(45, 212, 191, 0.12), transparent 24%),
+    linear-gradient(180deg, #08111b 0%, #0c1723 48%, #09121b 100%);
+  color: #e6eef7;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at top left, rgba(34, 211, 238, 0.18), transparent 26%),
+    radial-gradient(circle at top right, rgba(45, 212, 191, 0.12), transparent 24%),
+    linear-gradient(180deg, #08111b 0%, #0c1723 48%, #09121b 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: rgba(148, 163, 184, 0.38);
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::selection {
+  background: rgba(45, 212, 191, 0.26);
+}
+
+@layer base {
+  body {
+    @apply antialiased text-slate-100;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply border border-white/10 bg-slate-950/45 shadow-[0_20px_80px_rgba(2,8,23,.45)] backdrop-blur-xl;
+  }
+
+  .surface-panel {
+    @apply border border-white/10 bg-slate-900/55 shadow-[0_18px_45px_rgba(2,8,23,.35)] backdrop-blur;
+  }
+
+  .soft-ring {
+    @apply ring-1 ring-white/10;
+  }
+
+  .label-chip {
+    @apply inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-medium text-slate-300;
+  }
+}
